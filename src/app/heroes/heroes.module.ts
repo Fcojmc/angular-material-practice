@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
+import { ImagePipe } from './pipes/image.pipe';
 
 import { AddComponent } from './pages/add/add.component';
 import { SearchComponent } from './pages/search/search.component';
@@ -11,7 +13,7 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
-import { ImagePipe } from './pipes/image.pipe';
+
 
 
 
@@ -31,7 +33,8 @@ import { ImagePipe } from './pipes/image.pipe';
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    HeroesRoutingModule
+    HeroesRoutingModule,
+    FormsModule
   ]
 })
 export class HeroesModule { }
